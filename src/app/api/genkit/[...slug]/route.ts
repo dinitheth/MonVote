@@ -1,7 +1,7 @@
 import { ai } from '@/ai/genkit';
-import { getAPIHandler } from '@genkit-ai/next';
+import { createApiHandler } from '@genkit-ai/next';
 
-export const { GET, POST } = getAPIHandler({
+export const { GET, POST } = createApiHandler({
   ai,
   // This is necessary if you are running Genkit in a different environment
   // from your web app.
